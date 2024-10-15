@@ -1,8 +1,15 @@
 {
   "scripts": {
-    "serve": "esbuild app.js --outdir=www/js --bundle --servedir=www --serve=9009 --serve-fallback=www/index.html"
+    "serve": "esbuild app.tsx --outdir=www/js --bundle --servedir=www --serve=9009 --serve-fallback=www/index.html --loader:.js=jsx"
+  },
+  "engines": {
+    "node": ">=22"
   },
   "devDependencies": {
-    "esbuild": "0.19.5"
+    "esbuild": "0.24.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

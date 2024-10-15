@@ -2,10 +2,18 @@
 
 Your job is to create a super basic wiki using javascript or typescript.
 
+
+
 ### Getting started
+Install nvm, unless you have node v22 installed already
+```
+nvm install 22
+nvm use 22
+```
+
 Clone the repo and run 
 ```
-npm install
+npm i
 npm run serve
 ```
 
